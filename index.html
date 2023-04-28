@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p>Screen Width <span id="w"></span></p>
+        <p>Screen Height <span id="h"></span></p>
+    </body>
+
+    <script>
+        let w = document.getElementById("w");
+        let h = document.getElementById("h");
+
+        w.innerText = globalThis.screen.availWidth;
+        h.innerText = globalThis.screen.availHeight;
+    </script>
+</html>
